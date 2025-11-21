@@ -7,6 +7,11 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+header {
+    /* background-color: var(--primary-color); */
+    color: var(--accent2-color);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,10 +45,25 @@ nav, p, section, article {
     position: relative;
 }
 
+.hero article {
+    position: absolute;
+    right: 20px;
+    top:    58%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    max-width: 900px;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+.hero h1 {
+    color: var(--accent2-color);
 }
 
 h1 {
