@@ -50,7 +50,7 @@ h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    pad: 16px;
+    page: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
