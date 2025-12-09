@@ -20,6 +20,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
 
 }
 .logo {
@@ -74,6 +76,8 @@ nav, p, section, article {
     position: relative;
     text-align: center;
     padding: 2rem  1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero article {
@@ -226,3 +230,321 @@ footer p {
     display: block;
     
 }
+
+
+
+
+
+
+
+
+
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+
+
+.contact-info h2 {
+    margin-bottom: 15px;
+    color: #004a7c;
+}
+
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* ---------- Employees Section ---------- */
+.employees {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.employees h2 {
+    margin-bottom: 20px;
+    color: #004a7c;
+}
+
+.employees figure {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.employees img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.employees figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ---------- Contact Form Section ---------- */
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    color: #004a7c;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #cdd6dd;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #0077c8;
+    box-shadow: 0 0 6px rgba(0, 119, 200, 0.3);
+}
+
+/* Radio buttons & checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Textarea height */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* ---------- Submit Button ---------- */
+.submit-btn {
+    margin-top: 20px;
+    padding: 14px;
+    background: white;
+    color: blue;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: green;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .employees figure {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .employees img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.contact-title {
+    position: relative;
+    top: 0px;
+    width:98%;
+    padding: 20px; 
+    text-align: center;
+    opacity: 10;
+    background-color: var(--accent1-color);
+    color: #fff;
+
+}
+
+
+/* index css */
+.newsletter {
+    max-width: 700px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter button{
+    background: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta {
+    text-align: center;
+    margin: 3rem 0;
+    background: #e1f3ff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.cta-button {
+    background: #0d6efd;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.purpose-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.grid-item {
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* TRIP CSS */
+ .page-title  {
+    position: relative;
+    top: 2px;
+    width:98%;
+    padding: 20px; 
+    text-align: center;
+    opacity: 10;
+    background-color: var(--accent1-color);
+    color: #fff;
+ }
+
+ .trip-cta {
+    text-align: center;
+    background: #e1f3ff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    max-width: 800px;
+ }
+
+ .trip-cta p {
+    margin-bottom: 1rem;
+ }
+
+ .cta-button {
+    background: #0d6efd;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+ }
+
+ .trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 2rem;
+ }
+
+ .trip-card {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+ }
+
+ .trip-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+
+ .trip-table-section {
+    margin: 2rem;
+ }
+
+ .trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+
+ .trip-table th,
+ .trip-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+ }
+
+ .trip-table th {
+    background: #0d6efd;
+    color: white;
+    font-weight: bold;
+ }
+
+ .trip-table tr:nth-child(even) {
+    background: #f1f1f1;
+ }
